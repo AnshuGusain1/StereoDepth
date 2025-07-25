@@ -9,6 +9,9 @@ while cap0.isOpened():
     success, img0 = cap0.read()
     success1, img1 = cap1.read()
 
+    img0 = cv2.resize(img0, (640, 480))
+    img1 = cv2.resize(img1, (640, 480))
+
     k = cv2.waitKey(5)
 
     if k == 27:
