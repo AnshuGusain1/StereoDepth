@@ -14,8 +14,8 @@ while cap0.isOpened():
     if k == 27:
         break
     elif k == ord('s'): # wait for 's' key to save and exit
-        cv2.imwrite('StereoDepth/images/images_left/img' + str(num) + '.png', img0)
-        cv2.imwrite('StereoDepth/images/images_right/img' + str(num) + '.png', img1)
+        cv2.imwrite('images/images_left/img' + str(num) + '.png', img0)
+        cv2.imwrite('images/images_right/img' + str(num) + '.png', img1)
         print("image saved!")
         num += 1
 
